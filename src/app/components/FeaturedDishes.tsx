@@ -1,0 +1,79 @@
+export function FeaturedDishes() {
+  const dishes = [
+    {
+      name: "Street Tacos",
+      description: "Three soft corn tortillas with your choice of meat, cilantro, onions, and lime",
+      price: "$12.99",
+      image: "https://images.unsplash.com/photo-1722239319565-ace2d79a5623?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwdGFjb3MlMjBjb2xvcmZ1bCUyMGZyZXNofGVufDF8fHx8MTc3MzYyODU0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    {
+      name: "Sizzling Fajitas",
+      description: "Grilled chicken or steak with peppers, onions, served with warm tortillas",
+      price: "$16.99",
+      image: "https://images.unsplash.com/photo-1726514734441-dde9eabd9208?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwZmFqaXRhcyUyMHNpenpsaW5nJTIwcGxhdGV8ZW58MXx8fHwxNzczNjI4NTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    {
+      name: "Cheese Quesadilla",
+      description: "Flour tortilla stuffed with melted cheese, grilled to perfection",
+      price: "$9.99",
+      image: "https://images.unsplash.com/photo-1588798571170-5e9df66a6c1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwcXVlc2FkaWxsYSUyMGNoZWVzZSUyMG1lbHRlZHxlbnwxfHx8fDE3NzM1OTc2MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    {
+      name: "Classic Margarita",
+      description: "Premium tequila, fresh lime juice, triple sec, served on the rocks",
+      price: "$8.99",
+      image: "https://images.unsplash.com/photo-1613510214650-8f4911d8a506?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJnYXJpdGElMjBjb2NrdGFpbCUyMGxpbWUlMjBzYWx0fGVufDF8fHx8MTc3MzYyODU0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    {
+      name: "Fresh Guacamole",
+      description: "Made to order with ripe avocados, tomatoes, onions, cilantro, and lime",
+      price: "$7.99",
+      image: "https://images.unsplash.com/photo-1619810816619-8f98478ce85e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxndWFjYW1vbGUlMjBhdm9jYWRvJTIwY2hpcHMlMjBmcmVzaHxlbnwxfHx8fDE3NzM2Mjg1NDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    },
+    {
+      name: "Chimichanga",
+      description: "Deep-fried burrito filled with your choice of meat, topped with cheese sauce",
+      price: "$14.99",
+      image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwYnVycml0byUyMHJpY2UlMjBiZWFuc3xlbnwxfHx8fDE3NzM2Mjg1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    }
+  ];
+
+  return (
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold text-[#6d1c57] mb-4">
+            Featured Dishes
+          </h2>
+          <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
+            Discover our most popular dishes, crafted with authentic recipes and the freshest ingredients
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {dishes.map((dish, index) => (
+            <div 
+              key={index}
+              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src={dish.image}
+                  alt={dish.name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-4 right-4 bg-[#ea1758] text-white px-4 py-2 rounded-full font-bold">
+                  {dish.price}
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-[#6d1c57] mb-2">{dish.name}</h3>
+                <p className="text-foreground/70">{dish.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
