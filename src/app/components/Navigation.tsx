@@ -39,8 +39,8 @@ export function Navigation() {
               onClick={() => scrollToSection('hero')}
               className="flex items-center gap-2"
             >
-              <div className="w-12 h-12 bg-[#6d1c57] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">CV</span>
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center">
+                <img src="https://i.ibb.co/fGC4VwBM/logo-removebg-preview.png" alt="Casa Vieja Logo" />
               </div>
               <span className="text-2xl font-bold text-[#6d1c57] hidden sm:block">Casa Vieja</span>
             </button>

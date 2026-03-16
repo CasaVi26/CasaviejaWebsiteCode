@@ -62,7 +62,7 @@ export function Location() {
                 <h3 className="font-bold text-xl text-foreground mb-3">Hours</h3>
                 <div className="space-y-2">
                   {hours.map((schedule, index) => (
-                    <div key={index} className="flex justify-between text-foreground/70">
+                    <div key={index} className="flex justify-between text-foreground/70 gap-4">
                       <span className="font-medium">{schedule.day}</span>
                       <span>{schedule.time}</span>
                     </div>

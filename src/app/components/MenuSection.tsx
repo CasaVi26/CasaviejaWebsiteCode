@@ -243,24 +243,25 @@ const categories = [
             <TabsContent key={category.id} value={category.id} className="mt-0">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {menuData[category.id as keyof typeof menuData].map((item, index) => (
-                  <div 
+                  <div
                     key={index}
-                    className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                    className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300"
                   >
-                    <div className="relative h-48 overflow-hidden">
-                      <img 
-                        src={item.image}
-                        alt={item.name}
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute top-3 right-3 bg-[#ea1758] text-white px-3 py-1 rounded-full font-bold">
+                    <div className="flex items-start justify-between mb-2">
+                      <h3 className="text-xl font-bold text-[#6d1c57] leading-tight">
+                        {item.name}
+                      </h3>
+
+                      <span className="text-lg font-bold text-[#ea1758] whitespace-nowrap ml-4">
                         {item.price}
-                      </div>
+                      </span>
                     </div>
-                    <div className="p-5">
-                      <h3 className="text-xl font-bold text-[#6d1c57] mb-2">{item.name}</h3>
-                      <p className="text-foreground/70 text-m">{item.description}</p>
-                    </div>
+
+                    <div className="border-b border-gray-200 my-2"></div>
+
+                    <p className="text-foreground/70 text-m leading-relaxed">
+                      {item.description}
+                    </p>
                   </div>
                 ))}
               </div>

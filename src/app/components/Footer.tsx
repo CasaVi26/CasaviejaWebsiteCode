@@ -28,25 +28,11 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a 
-                href="#" 
+                href="https://www.facebook.com/casaviejamex/" 
                 className="w-10 h-10 bg-white/10 hover:bg-[#6d1c57] rounded-full flex items-center justify-center transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
-              </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 bg-white/10 hover:bg-[#6d1c57] rounded-full flex items-center justify-center transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 bg-white/10 hover:bg-[#6d1c57] rounded-full flex items-center justify-center transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -142,6 +128,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-12 pt-8 text-center text-white/70">
+          <p>Designed and developed by <a href="https://gaweb.dev/?casavieja" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Emir Gamaleev at gaweb.dev</a></p>
           <p>&copy; {new Date().getFullYear()} Casa Vieja. All rights reserved.</p>
         </div>
       </div>

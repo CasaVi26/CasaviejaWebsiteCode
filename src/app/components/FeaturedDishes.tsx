@@ -22,19 +22,19 @@ export function FeaturedDishes() {
       name: "Classic Margarita",
       description: "Premium tequila, fresh lime juice, triple sec, served on the rocks",
       price: "$8.99",
-      image: "https://images.unsplash.com/photo-1613510214650-8f4911d8a506?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJnYXJpdGElMjBjb2NrdGFpbCUyMGxpbWUlMjBzYWx0fGVufDF8fHx8MTc3MzYyODU0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      image: "https://i.postimg.cc/SsdBgzx7/unnamed.png"
     },
     {
       name: "Fresh Guacamole",
       description: "Made to order with ripe avocados, tomatoes, onions, cilantro, and lime",
       price: "$7.99",
-      image: "https://images.unsplash.com/photo-1619810816619-8f98478ce85e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxndWFjYW1vbGUlMjBhdm9jYWRvJTIwY2hpcHMlMjBmcmVzaHxlbnwxfHx8fDE3NzM2Mjg1NDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      image: "https://i.postimg.cc/769FKTZN/unnamed-(1).png"
     },
     {
       name: "Chimichanga",
       description: "Deep-fried burrito filled with your choice of meat, topped with cheese sauce",
       price: "$14.99",
-      image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwYnVycml0byUyMHJpY2UlMjBiZWFuc3xlbnwxfHx8fDE3NzM2Mjg1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      image: "https://i.postimg.cc/VLMXCyLv/unnamed-(2)-(1).png"
     }
   ];
 

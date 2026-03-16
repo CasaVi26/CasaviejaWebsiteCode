@@ -20,6 +20,8 @@ export function CTABanner() {
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-1/2 translate-y-1/2"></div>
       </div>
 
+    <img src="https://i.postimg.cc/vmR3fHbL/full-logo.jpg" alt="Casa Vieja Logo" className="mx-auto max-w-300 w-4/5 object-contain border-white/20 rounded-xl mb-6" />
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
           Ready for Authentic Mexican Cuisine?
