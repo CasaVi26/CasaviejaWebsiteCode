@@ -4,194 +4,215 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 export function MenuSection() {
   const [activeTab, setActiveTab] = useState('appetizers');
 
-  const menuData = {
-    appetizers: [
-      {
-        name: "Chips & Salsa",
-        description: "Crispy tortilla chips with house-made salsa",
-        price: "$5.99",
-        image: "https://images.unsplash.com/photo-1579639482794-abf71bcd3960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlwcyUyMHNhbHNhJTIwbWV4aWNhbiUyMGFwcGV0aXplcnxlbnwxfHx8fDE3NzM2Mjg1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      },
-      {
-        name: "Fresh Guacamole",
-        description: "Made to order with ripe avocados",
-        price: "$7.99",
-        image: "https://images.unsplash.com/photo-1619810816619-8f98478ce85e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxndWFjYW1vbGUlMjBhdm9jYWRvJTIwY2hpcHMlMjBmcmVzaHxlbnwxfHx8fDE3NzM2Mjg1NDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      },
-      {
-        name: "Loaded Nachos",
-        description: "Tortilla chips loaded with cheese, jalapeños, and your choice of meat",
-        price: "$10.99",
-        image: "https://images.unsplash.com/photo-1757774551171-91143e145b0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuYWNob3MlMjBjaGVlc2UlMjBqYWxhcGVub3MlMjBtZXhpY2FufGVufDF8fHx8MTc3MzYyODU1MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      }
-    ],
-    tacos: [
-      {
-        name: "Street Tacos",
-        description: "Three soft corn tortillas with cilantro and onions",
-        price: "$12.99",
-        image: "https://images.unsplash.com/photo-1722239319565-ace2d79a5623?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwdGFjb3MlMjBjb2xvcmZ1bCUyMGZyZXNofGVufDF8fHx8MTc3MzYyODU0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      },
-      {
-        name: "Carne Asada Tacos",
-        description: "Grilled steak with fresh toppings",
-        price: "$13.99",
-        image: "https://images.unsplash.com/photo-1722239319565-ace2d79a5623?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwdGFjb3MlMjBjb2xvcmZ1bCUyMGZyZXNofGVufDF8fHx8MTc3MzYyODU0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      },
-      {
-        name: "Fish Tacos",
-        description: "Grilled or fried fish with cabbage slaw",
-        price: "$14.99",
-        image: "https://images.unsplash.com/photo-1722239319565-ace2d79a5623?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwdGFjb3MlMjBjb2xvcmZ1bCUyMGZyZXNofGVufDF8fHx8MTc3MzYyODU0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      }
-    ],
-    burritos: [
-      {
-        name: "Classic Burrito",
-        description: "Large flour tortilla filled with rice, beans, cheese, and your choice of meat",
-        price: "$11.99",
-        image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwYnVycml0byUyMHJpY2UlMjBiZWFuc3xlbnwxfHx8fDE3NzM2Mjg1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      },
-      {
-        name: "California Burrito",
-        description: "Stuffed with carne asada, fries, cheese, and guacamole",
-        price: "$13.99",
-        image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwYnVycml0byUyMHJpY2UlMjBiZWFuc3xlbnwxfHx8fDE3NzM2Mjg1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      },
-      {
-        name: "Chimichanga",
-        description: "Deep-fried burrito topped with cheese sauce",
-        price: "$14.99",
-        image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwYnVycml0byUyMHJpY2UlMjBiZWFuc3xlbnwxfHx8fDE3NzM2Mjg1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      }
-    ],
-    fajitas: [
-      {
-        name: "Chicken Fajitas",
-        description: "Sizzling grilled chicken with peppers and onions",
-        price: "$16.99",
-        image: "https://images.unsplash.com/photo-1726514734441-dde9eabd9208?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwZmFqaXRhcyUyMHNpenpsaW5nJTIwcGxhdGV8ZW58MXx8fHwxNzczNjI4NTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      },
-      {
-        name: "Steak Fajitas",
-        description: "Tender grilled steak with peppers and onions",
-        price: "$18.99",
-        image: "https://images.unsplash.com/photo-1726514734441-dde9eabd9208?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwZmFqaXRhcyUyMHNpenpsaW5nJTIwcGxhdGV8ZW58MXx8fHwxNzczNjI4NTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      },
-      {
-        name: "Mixed Fajitas",
-        description: "Combination of chicken and steak",
-        price: "$19.99",
-        image: "https://images.unsplash.com/photo-1726514734441-dde9eabd9208?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwZmFqaXRhcyUyMHNpenpsaW5nJTIwcGxhdGV8ZW58MXx8fHwxNzczNjI4NTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      }
-    ],
-    enchiladas: [
-      {
-        name: "Cheese Enchiladas",
-        description: "Three cheese enchiladas topped with red sauce",
-        price: "$11.99",
-        image: "https://images.unsplash.com/photo-1734989435134-7e4885259231?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwZW5jaGlsYWRhcyUyMHNhdWNlJTIwY2hlZXNlfGVufDF8fHx8MTc3MzYyODU0OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      },
-      {
-        name: "Chicken Enchiladas",
-        description: "Three chicken enchiladas with green sauce",
-        price: "$12.99",
-        image: "https://images.unsplash.com/photo-1734989435134-7e4885259231?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwZW5jaGlsYWRhcyUyMHNhdWNlJTIwY2hlZXNlfGVufDF8fHx8MTc3MzYyODU0OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      },
-      {
-        name: "Beef Enchiladas",
-        description: "Three beef enchiladas with mole sauce",
-        price: "$13.99",
-        image: "https://images.unsplash.com/photo-1734989435134-7e4885259231?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwZW5jaGlsYWRhcyUyMHNhdWNlJTIwY2hlZXNlfGVufDF8fHx8MTc3MzYyODU0OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      }
-    ],
-    combinations: [
-      {
-        name: "Two Item Combo",
-        description: "Choose any two items with rice and beans",
-        price: "$13.99",
-        image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwcmljZSUyMGJlYW5zJTIwc2lkZXxlbnwxfHx8fDE3NzM2Mjg1NTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      },
-      {
-        name: "Three Item Combo",
-        description: "Choose any three items with rice and beans",
-        price: "$15.99",
-        image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwcmljZSUyMGJlYW5zJTIwc2lkZXxlbnwxfHx8fDE3NzM2Mjg1NTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      }
-    ],
-    sides: [
-      {
-        name: "Mexican Rice",
-        description: "Traditional Spanish rice",
-        price: "$3.99",
-        image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwcmljZSUyMGJlYW5zJTIwc2lkZXxlbnwxfHx8fDE3NzM2Mjg1NTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      },
-      {
-        name: "Refried Beans",
-        description: "Creamy refried beans",
-        price: "$3.99",
-        image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwcmljZSUyMGJlYW5zJTIwc2lkZXxlbnwxfHx8fDE3NzM2Mjg1NTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      },
-      {
-        name: "Black Beans",
-        description: "Seasoned black beans",
-        price: "$3.99",
-        image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwcmljZSUyMGJlYW5zJTIwc2lkZXxlbnwxfHx8fDE3NzM2Mjg1NTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      }
-    ],
-    drinks: [
-      {
-        name: "Horchata",
-        description: "Sweet rice milk drink with cinnamon",
-        price: "$3.99",
-        image: "https://images.unsplash.com/photo-1613510214650-8f4911d8a506?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJnYXJpdGElMjBjb2NrdGFpbCUyMGxpbWUlMjBzYWx0fGVufDF8fHx8MTc3MzYyODU0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      },
-      {
-        name: "Jamaica",
-        description: "Hibiscus flower tea",
-        price: "$3.99",
-        image: "https://images.unsplash.com/photo-1613510214650-8f4911d8a506?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJnYXJpdGElMjBjb2NrdGFpbCUyMGxpbWUlMjBzYWx0fGVufDF8fHx8MTc3MzYyODU0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      },
-      {
-        name: "Soft Drinks",
-        description: "Coca-Cola products",
-        price: "$2.99",
-        image: "https://images.unsplash.com/photo-1613510214650-8f4911d8a506?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJnYXJpdGElMjBjb2NrdGFpbCUyMGxpbWUlMjBzYWx0fGVufDF8fHx8MTc3MzYyODU0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      }
-    ],
-    margaritas: [
-      {
-        name: "Classic Margarita",
-        description: "Premium tequila, lime juice, triple sec",
-        price: "$8.99",
-        image: "https://images.unsplash.com/photo-1613510214650-8f4911d8a506?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJnYXJpdGElMjBjb2NrdGFpbCUyMGxpbWUlMjBzYWx0fGVufDF8fHx8MTc3MzYyODU0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      },
-      {
-        name: "Strawberry Margarita",
-        description: "Fresh strawberries blended with tequila",
-        price: "$9.99",
-        image: "https://images.unsplash.com/photo-1613510214650-8f4911d8a506?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJnYXJpdGElMjBjb2NrdGFpbCUyMGxpbWUlMjBzYWx0fGVufDF8fHx8MTc3MzYyODU0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      },
-      {
-        name: "Mango Margarita",
-        description: "Sweet mango with a kick of tequila",
-        price: "$9.99",
-        image: "https://images.unsplash.com/photo-1613510214650-8f4911d8a506?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJnYXJpdGElMjBjb2NrdGFpbCUyMGxpbWUlMjBzYWx0fGVufDF8fHx8MTc3MzYyODU0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-      }
-    ]
-  };
+const menuData = {
+  appetizers: [
+    {
+      name: "Appetizer's Plate",
+      description: "Quesadillas, taquitos, nachos al carbon, sour cream, guacamole salad",
+      price: "$16",
+      image: "https://images.unsplash.com/photo-1579639482794-abf71bcd3960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Macho Nachos",
+      description: "Shredded chicken or ground beef, cheese, beans, lettuce, tomato, guacamole, sour cream",
+      price: "$14",
+      image: "https://images.unsplash.com/photo-1757774551171-91143e145b0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Texas Dip",
+      description: "Grilled shrimp, steak, grilled chicken, beans, cheese",
+      price: "$16",
+      image: "https://images.unsplash.com/photo-1579639482794-abf71bcd3960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Guacamole Mexicano",
+      description: "Avocado, tomato, onion, jalapeño, cilantro, lime",
+      price: "$13",
+      image: "https://images.unsplash.com/photo-1619810816619-8f98478ce85e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    }
+  ],
+  tacos: [
+    {
+      name: "Tacos Al Pastor",
+      description: "Four marinated pork tacos with pineapple, onions, cilantro, salsa verde, and lime",
+      price: "$17",
+      image: "https://images.unsplash.com/photo-1722239319565-ace2d79a5623?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Fish Tacos",
+      description: "Three fried tilapia tacos, pico de gallo, red cabbage, chipotle salsa",
+      price: "$13",
+      image: "https://images.unsplash.com/photo-1722239319565-ace2d79a5623?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Tacos de Carne Asada",
+      description: "Marinated steak, corn tortillas, pico de gallo, salsa verde, rice, beans",
+      price: "$16",
+      image: "https://images.unsplash.com/photo-1722239319565-ace2d79a5623?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Tacos de Pollo",
+      description: "Three crunchy shredded chicken tacos, lettuce, cheese",
+      price: "$10",
+      image: "https://images.unsplash.com/photo-1722239319565-ace2d79a5623?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    }
+  ],
+  burritos: [
+    {
+      name: "Burrito Supreme",
+      description: "Ground beef, beans, melted cheese, lettuce, tomato, sour cream, guacamole",
+      price: "$13",
+      image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Burrito Don Nacho",
+      description: "Steak, grilled chicken, shrimp, chorizo, melted cheese",
+      price: "$20",
+      image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Hot & Spicy Burrito",
+      description: "Ground beef, rice, beans, chile con carne, melted cheese, sour cream",
+      price: "$15",
+      image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    }
+  ],
+  fajitas: [
+    {
+      name: "Fajitas (Chicken or Steak)",
+      description: "Sizzling grilled chicken or steak, sautéed onions, bell peppers, tomato",
+      price: "$19",
+      image: "https://images.unsplash.com/photo-1726514734441-dde9eabd9208?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Texas Fajitas",
+      description: "Grilled shrimp, steak, and grilled chicken, sautéed onions, bell peppers, tomato",
+      price: "$23",
+      image: "https://images.unsplash.com/photo-1726514734441-dde9eabd9208?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Fajitas Vegetarianas",
+      description: "Sautéed onions, bell peppers, tomato, cauliflower, mushrooms, carrots, broccoli, rice, beans, guacamole salad, tortillas",
+      price: "$16",
+      image: "https://images.unsplash.com/photo-1726514734441-dde9eabd9208?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    }
+  ],
+  enchiladas: [
+    {
+      name: "Enchiladas Supreme",
+      description: "One chicken, one cheese, one beef, and one bean enchilada, salsa, lettuce, tomato, cheese, sour cream",
+      price: "$15",
+      image: "https://images.unsplash.com/photo-1734989435134-7e4885259231?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Enchiladas Verdes",
+      description: "Three chicken enchiladas, melted cheese, salsa verde, lettuce, tomato, sour cream",
+      price: "$13",
+      image: "https://images.unsplash.com/photo-1734989435134-7e4885259231?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Enchiladas Rancheras",
+      description: "Three cheese + onion enchiladas, lettuce, tomato, sour cream",
+      price: "$13",
+      image: "https://images.unsplash.com/photo-1734989435134-7e4885259231?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    }
+  ],
+  combinations: [
+    {
+      name: "Combination A",
+      description: "Taco, Enchilada, Rice, and Beans",
+      price: "$11.95",
+      image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Combination E",
+      description: "Chile Relleno, Taco, Enchilada, Rice, and Beans",
+      price: "$14.50",
+      image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    }
+  ],
+  sides: [
+    {
+      name: "Arroz (Rice)",
+      description: "Traditional Mexican rice",
+      price: "$3.50",
+      image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Frijoles (Beans)",
+      description: "Traditional Mexican beans",
+      price: "$3.50",
+      image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Tamale",
+      description: "Single traditional tamale",
+      price: "$4.50",
+      image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    }
+  ],
+  houseSpecials: [
+    {
+      name: "Molcajete",
+      description: "Grilled steak, chicken, shrimp, chorizo, grilled queso fresco, poblano and roasted green onions",
+      price: "$25",
+      image: "https://images.unsplash.com/photo-1726514734441-dde9eabd9208?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Carnitas",
+      description: "Deep fried beer-marinated pork chunks, rice, beans, pico de gallo, salsa verde, tortillas",
+      price: "$15",
+      image: "https://images.unsplash.com/photo-1726514734441-dde9eabd9208?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Mole Poblano",
+      description: "Shredded chicken breast, mole sauce, sesame seeds, rice, beans, tortillas",
+      price: "$14",
+      image: "https://images.unsplash.com/photo-1726514734441-dde9eabd9208?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    }
+  ],
+  lunch: [
+    {
+      name: "Lunch #1",
+      description: "Burrito, Taco, Enchilada, and Chalupa",
+      price: "$10.50",
+      image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Huevos con Chorizo",
+      description: "Eggs with Mexican sausage, rice, and beans",
+      price: "$11.50",
+      image: "https://images.unsplash.com/photo-1705515943119-e85d4c81f08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    }
+  ],
+  drinks: [
+    {
+      name: "Soft Drinks",
+      description: "Coke, Diet Coke, Coke Zero, Sprite, Lemonade, Fanta, Mr. Pibb, Tea, Coffee",
+      price: "$3.25",
+      image: "https://images.unsplash.com/photo-1613510214650-8f4911d8a506?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    },
+    {
+      name: "Cerveza Mexicana",
+      description: "Corona, Modelo, Dos Equis, Pacifico, Sol, Victoria",
+      price: "$5.50",
+      image: "https://images.unsplash.com/photo-1613510214650-8f4911d8a506?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    }
+  ]
+};
 
-  const categories = [
-    { id: 'appetizers', label: 'Appetizers' },
-    { id: 'tacos', label: 'Tacos' },
-    { id: 'burritos', label: 'Burritos' },
-    { id: 'fajitas', label: 'Fajitas' },
-    { id: 'enchiladas', label: 'Enchiladas' },
-    { id: 'combinations', label: 'Combination Plates' },
-    { id: 'sides', label: 'Sides' },
-    { id: 'drinks', label: 'Drinks' },
-    { id: 'margaritas', label: 'Margaritas' }
-  ];
+const categories = [
+  { id: 'appetizers', label: 'Appetizers' },
+  { id: 'tacos', label: 'Tacos' },
+  { id: 'burritos', label: 'Burritos' },
+  { id: 'fajitas', label: 'Fajitas' },
+  { id: 'enchiladas', label: 'Enchiladas' },
+  { id: 'combinations', label: 'Combination Plates' },
+  { id: 'houseSpecials', label: 'House Specials' },
+  { id: 'lunch', label: 'Lunch Specials' },
+  { id: 'sides', label: 'A La Carta' },
+  { id: 'drinks', label: 'Drinks' }
+];
 
   return (
     <section id="menu" className="py-20 bg-[#faf8f5]">
@@ -238,7 +259,7 @@ export function MenuSection() {
                     </div>
                     <div className="p-5">
                       <h3 className="text-xl font-bold text-[#6d1c57] mb-2">{item.name}</h3>
-                      <p className="text-foreground/70 text-sm">{item.description}</p>
+                      <p className="text-foreground/70 text-m">{item.description}</p>
                     </div>
                   </div>
                 ))}

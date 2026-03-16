@@ -34,7 +34,7 @@ export function Gallery() {
             Gallery
           </h2>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
-            A taste of what awaits you at Casa Vieja
+            A preview  of what awaits you at Casa Vieja
           </p>
         </div>
 
