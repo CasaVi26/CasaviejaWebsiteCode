@@ -6,6 +6,6 @@
   createRoot(document.getElementById("root")!).render(
  <>
    <App />
-   <Analytics />;
+   <Analytics />
  </>
 );
