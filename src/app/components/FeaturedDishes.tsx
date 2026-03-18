@@ -9,7 +9,7 @@ export function FeaturedDishes() {
     {
       name: "Tacos",
       description: "Grilled chicken or beef, onions, very nice tacos with lots of vegies",
-      price: "$10.99",
+      price: "$9.99",
       image: "https://i.ibb.co/0p0ht1Q6/tacos.jpg"
     },
     {
@@ -27,11 +27,11 @@ export function FeaturedDishes() {
     {
       name: "Fresh Guacamole",
       description: "Made to order with ripe avocados, tomatoes, onions, cilantro, and lime",
-      price: "$7.99",
+      price: "$15.99",
       image: "https://i.postimg.cc/769FKTZN/unnamed-(1).png"
     },
     {
-      name: "Example Dish name",
+      name: "Stuffed Pig Bowl",
       description: "Deep-fried burrito filled with your choice of meat, not actual dish thats in the picture.",
       price: "$14.99",
       image: "https://i.postimg.cc/VLMXCyLv/unnamed-(2)-(1).png"
