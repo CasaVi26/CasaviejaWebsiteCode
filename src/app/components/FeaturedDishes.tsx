@@ -1,16 +1,16 @@
 export function FeaturedDishes() {
   const dishes = [
     {
-      name: "Street Tacos",
-      description: "Three soft corn tortillas with your choice of meat, cilantro, onions, and lime",
-      price: "$12.99",
-      image: "https://images.unsplash.com/photo-1722239319565-ace2d79a5623?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwdGFjb3MlMjBjb2xvcmZ1bCUyMGZyZXNofGVufDF8fHx8MTc3MzYyODU0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      name: "Example Dish name",
+      description: "Lots of meat upon awesome tacos with very good flavor and sauce",
+      price: "$14.99",
+      image: "https://i.ibb.co/j9TSJvd9/unnamed.jpg"
     },
     {
-      name: "Sizzling Fajitas",
-      description: "Grilled chicken or steak with peppers, onions, served with warm tortillas",
-      price: "$16.99",
-      image: "https://images.unsplash.com/photo-1726514734441-dde9eabd9208?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwZmFqaXRhcyUyMHNpenpsaW5nJTIwcGxhdGV8ZW58MXx8fHwxNzczNjI4NTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      name: "Tacos",
+      description: "Grilled chicken or beef, onions, very nice tacos with lots of vegies",
+      price: "$10.99",
+      image: "https://i.ibb.co/0p0ht1Q6/tacos.jpg"
     },
     {
       name: "Cheese Quesadilla",
@@ -31,8 +31,8 @@ export function FeaturedDishes() {
       image: "https://i.postimg.cc/769FKTZN/unnamed-(1).png"
     },
     {
-      name: "Chimichanga",
-      description: "Deep-fried burrito filled with your choice of meat, topped with cheese sauce",
+      name: "Example Dish name",
+      description: "Deep-fried burrito filled with your choice of meat, not actual dish thats in the picture.",
       price: "$14.99",
       image: "https://i.postimg.cc/VLMXCyLv/unnamed-(2)-(1).png"
     }

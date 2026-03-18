@@ -1,28 +1,28 @@
 export function Gallery() {
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1722239319565-ace2d79a5623?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwdGFjb3MlMjBjb2xvcmZ1bCUyMGZyZXNofGVufDF8fHx8MTc3MzYyODU0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Delicious Tacos"
+      url: "https://i.ibb.co/gMBNpJkY/fulltable.jpg",
+      alt: "A table of our staple dishes"
     },
     {
-      url: "https://images.unsplash.com/photo-1726514734441-dde9eabd9208?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwZmFqaXRhcyUyMHNpenpsaW5nJTIwcGxhdGV8ZW58MXx8fHwxNzczNjI4NTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Sizzling Fajitas"
+      url: "https://i.ibb.co/20tJG1VN/chips.jpg",
+      alt: "Chips"
     },
     {
-      url: "https://images.unsplash.com/photo-1613510214650-8f4911d8a506?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJnYXJpdGElMjBjb2NrdGFpbCUyMGxpbWUlMjBzYWx0fGVufDF8fHx8MTc3MzYyODU0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Fresh Margaritas"
+      url: "https://i.ibb.co/NgCbnWhD/guacamolyburrito.jpg",
+      alt: "Guacamole Burrito"
     },
     {
-      url: "https://images.unsplash.com/photo-1579639482794-abf71bcd3960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlwcyUyMHNhbHNhJTIwbWV4aWNhbiUyMGFwcGV0aXplcnxlbnwxfHx8fDE3NzM2Mjg1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Chips and Salsa"
+      url: "https://i.ibb.co/rCH5bNf/menu.jpg",
+      alt: "Our physical menu, digital one is above!"
     },
     {
-      url: "https://images.unsplash.com/photo-1619810816619-8f98478ce85e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxndWFjYW1vbGUlMjBhdm9jYWRvJTIwY2hpcHMlMjBmcmVzaHxlbnwxfHx8fDE3NzM2Mjg1NDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Fresh Guacamole"
+      url: "https://i.ibb.co/BVqG5y0x/enterance.jpg",
+      alt: "Entrance"
     },
     {
-      url: "https://images.unsplash.com/photo-1653084019129-1f2303bb5bc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwcmVzdGF1cmFudCUyMGludGVyaW9yJTIwY29sb3JmdWx8ZW58MXx8fHwxNzczNTg0NTc3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Restaurant Interior"
+      url: "https://i.ibb.co/qLQ0NqQm/interior.jpg",
+      alt: "Interior"
     }
   ];
 

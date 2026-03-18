@@ -1,4 +1,5 @@
 import { Users, ChefHat, Heart, Award } from 'lucide-react';
+import HeroImage from '../../assets/hero.webp';
 
 export function About() {
   const features = [
@@ -59,7 +60,7 @@ export function About() {
           <div className="relative">
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1653084019129-1f2303bb5bc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwcmVzdGF1cmFudCUyMGludGVyaW9yJTIwY29sb3JmdWx8ZW58MXx8fHwxNzczNTg0NTc3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src={HeroImage}
                 alt="Casa Vieja Restaurant Interior"
                 className="w-full h-full object-cover"
               />
