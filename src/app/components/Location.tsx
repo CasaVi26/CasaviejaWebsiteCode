@@ -110,6 +110,7 @@ export function Location() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-full"
+              title='Google Maps iFrame'
             ></iframe>
             <div className="absolute inset-0 bg-gradient-to-br from-[#6d1c57]/20 to-[#ea1758]/20 pointer-events-none"></div>
           </div>
