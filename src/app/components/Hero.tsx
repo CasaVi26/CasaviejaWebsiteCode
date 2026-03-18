@@ -1,6 +1,6 @@
 import { MapPin, ArrowRight } from 'lucide-react';
 import { Button } from './ui/button';
-import HeroImage from '@/assets/hero.jpg';
+import HeroImage from '../../assets/hero.webp';
 
 export function Hero() {
   const scrollToSection = (id: string) => {
