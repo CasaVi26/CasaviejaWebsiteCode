@@ -1,7 +1,7 @@
 export function FeaturedDishes() {
   const dishes = [
     {
-      name: "Example Dish name",
+      name: "Chicken Upon Tacos",
       description: "Lots of meat upon awesome tacos with very good flavor and sauce",
       price: "$14.99",
       image: "https://i.ibb.co/j9TSJvd9/unnamed.jpg"
