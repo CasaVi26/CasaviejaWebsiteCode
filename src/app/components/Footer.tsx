@@ -18,7 +18,7 @@ export function Footer() {
           {/* Logo & Description */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-12 h-12 bg-[#6d1c57] rounded-lg flex items-center justify-center">
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center">
                 <img src="https://i.ibb.co/fGC4VwBM/logo-removebg-preview.png" alt="Casa Vieja Logo" />
               </div>
               <span className="text-2xl font-bold">Casa Vieja</span>
