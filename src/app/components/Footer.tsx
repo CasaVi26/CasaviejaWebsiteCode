@@ -19,7 +19,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-12 h-12 bg-[#6d1c57] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">CV</span>
+                <img src="https://i.ibb.co/fGC4VwBM/logo-removebg-preview.png" alt="Casa Vieja Logo" />
               </div>
               <span className="text-2xl font-bold">Casa Vieja</span>
             </div>
