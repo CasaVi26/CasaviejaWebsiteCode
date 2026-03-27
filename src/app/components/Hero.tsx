@@ -32,7 +32,7 @@ export function Hero() {
             The Best Mexican Cuisine in Town
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Authentic Mexican Cuisine in Peachtree City
+            Traditional Mexican Cuisine in Peachtree City
           </h1>
           <p className="text-xl sm:text-2xl text-white/90 mb-8">
             Experience the vibrant flavors of Mexico with fresh ingredients, traditional recipes, and generous portions.

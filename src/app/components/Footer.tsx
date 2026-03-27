@@ -24,7 +24,7 @@ export function Footer() {
               <span className="text-2xl font-bold">Casa Vieja</span>
             </div>
             <p className="text-white/70 mb-6">
-              Authentic Mexican cuisine in Peachtree City. Fresh ingredients, traditional recipes, and generous portions.
+              Traditional Mexican cuisine in Peachtree City. Fresh ingredients, traditional recipes, and generous portions.
             </p>
             <div className="flex gap-4">
               <a 
@@ -121,7 +121,7 @@ export function Footer() {
               </li>
               <li className="flex flex-col">
                 <span className="font-medium text-white">Sunday</span>
-                <span>12:00 PM - 9:00 PM</span>
+                <span>11:00 PM - 9:00 PM</span>
               </li>
             </ul>
           </div>

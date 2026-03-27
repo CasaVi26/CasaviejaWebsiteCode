@@ -1,37 +1,37 @@
 export function FeaturedDishes() {
   const dishes = [
     {
-      name: "Chicken Upon Tacos",
+      name: "Casa Salad",
       description: "Lots of meat upon awesome tacos with very good flavor and sauce",
       price: "$14.99",
       image: "https://i.ibb.co/j9TSJvd9/unnamed.jpg"
     },
     {
-      name: "Tacos",
+      name: "Texas Fajitas",
       description: "Grilled chicken or beef, onions, very nice tacos with lots of vegies",
       price: "$9.99",
       image: "https://i.ibb.co/0p0ht1Q6/tacos.jpg"
     },
     {
-      name: "Cheese Quesadilla",
+      name: "Fish Tacos",
       description: "Flour tortilla stuffed with melted cheese, grilled to perfection",
       price: "$9.99",
       image: "https://images.unsplash.com/photo-1588798571170-5e9df66a6c1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwcXVlc2FkaWxsYSUyMGNoZWVzZSUyMG1lbHRlZHxlbnwxfHx8fDE3NzM1OTc2MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     },
     {
-      name: "Classic Margarita",
+      name: "Fish Tacos",
       description: "Premium tequila, fresh lime juice, triple sec, served on the rocks",
       price: "$8.99",
       image: "https://i.postimg.cc/SsdBgzx7/unnamed.png"
     },
     {
-      name: "Fresh Guacamole",
+      name: "Guacamole Mexicano",
       description: "Made to order with ripe avocados, tomatoes, onions, cilantro, and lime",
       price: "$15.99",
       image: "https://i.postimg.cc/769FKTZN/unnamed-(1).png"
     },
     {
-      name: "Stuffed Pig Bowl",
+      name: "Mole Poblano",
       description: "Deep-fried burrito filled with your choice of meat, not actual dish thats in the picture.",
       price: "$14.99",
       image: "https://i.postimg.cc/VLMXCyLv/unnamed-(2)-(1).png"

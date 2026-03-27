@@ -8,7 +8,7 @@ export function Location() {
   const hours = [
     { day: "Monday - Thursday", time: "11:00 AM - 9:00 PM" },
     { day: "Friday - Saturday", time: "11:00 AM - 10:00 PM" },
-    { day: "Sunday", time: "12:00 PM - 9:00 PM" }
+    { day: "Sunday", time: "11:00 PM - 9:00 PM" }
   ];
 
   return (

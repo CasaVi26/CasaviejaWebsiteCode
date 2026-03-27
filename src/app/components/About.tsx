@@ -35,7 +35,7 @@ export function About() {
               Welcome to Casa Vieja
             </h2>
             <p className="text-lg text-foreground/70 mb-6 leading-relaxed">
-              Casa Vieja is your home for authentic Mexican cuisine in Peachtree City. We're a welcoming local Mexican restaurant known for our traditional recipes, fresh ingredients, and generous portions.
+              Casa Vieja is your home for traditional Mexican cuisine in Peachtree City. We're a welcoming local Mexican restaurant known for our traditional recipes, fresh ingredients, and generous portions.
             </p>
             <p className="text-lg text-foreground/70 mb-8 leading-relaxed">
               From sizzling fajitas to perfectly crafted margaritas, every dish is prepared with care and authenticity. Whether you're joining us for a casual lunch or a festive dinner, Casa Vieja brings the vibrant flavors of Mexico to your table.
