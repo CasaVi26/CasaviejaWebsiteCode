@@ -8,7 +8,7 @@ export function FeaturedDishes() {
       name: "Casa Salad",
       description: "Grilled chicken, greens, spinach, avocado, tomato. Steak or grilled chicken -> $14, shrimp $17. **Add avocado $2, add queso fresco $1.",
       price: "$15",
-      image: "https://i.ibb.co/j9TSJvd9/unnamed.jpg"
+      image: "https://i.ibb.co/ch2h7Tth/casasalad-removebg-preview.png"
     },
     {
       name: "Texas Fajitas",
@@ -20,7 +20,7 @@ export function FeaturedDishes() {
       name: "Vieja Quesadila",
       description: "Grilled chicken,sauteed onions, bell peppers, spinach, salsa verde, cheese, pico de gallo, guacamole, sour cream",
       price: "$15",
-      image: "https://images.unsplash.com/photo-1588798571170-5e9df66a6c1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwcXVlc2FkaWxsYSUyMGNoZWVzZSUyMG1lbHRlZHxlbnwxfHx8fDE3NzM1OTc2MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      image: "https://i.ibb.co/H58hPVM/viejaques-removebg-preview.png"
     },
     {
       name: "Fish Tacos",
@@ -32,7 +32,7 @@ export function FeaturedDishes() {
       name: "Guacamole Mexicano",
       description: "Avocado, tomato, onion, jalapeño, cilantro, lime",
       price: "$13",
-      image: "https://i.postimg.cc/769FKTZN/unnamed-(1).png"
+      image: "https://i.ibb.co/VpNvks8J/guemec-removebg-preview.png"
     },
     {
       name: "Mole Poblano",
