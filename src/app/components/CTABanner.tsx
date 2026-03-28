@@ -24,7 +24,7 @@ export function CTABanner() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-          Ready for Traditional Mexican Cuisine?
+          Ready for the Traditional Mexican Cuisine?
         </h2>
         <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
           Visit Casa Vieja today and experience the vibrant flavors of Mexico in Peachtree City
