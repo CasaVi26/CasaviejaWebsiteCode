@@ -29,7 +29,7 @@ export function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-3xl">
           <div className="inline-block mb-4 px-4 py-2 bg-[#ea1758] text-white rounded-full">
-            The Best Mexican Cuisine in Town
+            Casa Vieja
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             Traditional Mexican Cuisine in Peachtree City
