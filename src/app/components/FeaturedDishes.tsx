@@ -1,40 +1,44 @@
+/* <a href="https://imgbb.com/"><img src="https://i.ibb.co/ch2h7Tth/casasalad-removebg-preview.png" alt="casasalad removebg preview" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/VpNvks8J/guemec-removebg-preview.png" alt="guemec removebg preview" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/H58hPVM/viejaques-removebg-preview.png" alt="viejaques removebg preview" border="0"></a>*/
+
 export function FeaturedDishes() {
   const dishes = [
     {
       name: "Casa Salad",
-      description: "Lots of meat upon awesome tacos with very good flavor and sauce",
-      price: "$14.99",
+      description: "Grilled chicken, greens, spinach, avocado, tomato. Steak or grilled chicken -> $14, shrimp $17. **Add avocado $2, add queso fresco $1.",
+      price: "$15",
       image: "https://i.ibb.co/j9TSJvd9/unnamed.jpg"
     },
     {
       name: "Texas Fajitas",
-      description: "Grilled chicken or beef, onions, very nice tacos with lots of vegies",
-      price: "$9.99",
-      image: "https://i.ibb.co/0p0ht1Q6/tacos.jpg"
+      description: "Grilled shrimp, steak, and grilled chicken, sauteed onions, bell peppers, tomato",
+      price: "For 1: $23 / For 2: $42",
+      image: "https://i.ibb.co/rKqL6ZtD/texasfajitas-removebg-preview.png"
     },
     {
-      name: "Fish Tacos",
-      description: "Flour tortilla stuffed with melted cheese, grilled to perfection",
-      price: "$9.99",
+      name: "Vieja Quesadila",
+      description: "Grilled chicken,sauteed onions, bell peppers, spinach, salsa verde, cheese, pico de gallo, guacamole, sour cream",
+      price: "$15",
       image: "https://images.unsplash.com/photo-1588798571170-5e9df66a6c1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXhpY2FuJTIwcXVlc2FkaWxsYSUyMGNoZWVzZSUyMG1lbHRlZHxlbnwxfHx8fDE3NzM1OTc2MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     },
     {
       name: "Fish Tacos",
-      description: "Premium tequila, fresh lime juice, triple sec, served on the rocks",
+      description: "Three fried tilapia tacos, pico de gallo, red cabbage, chipotle salsa",
       price: "$8.99",
-      image: "https://i.postimg.cc/SsdBgzx7/unnamed.png"
+      image: "https://i.ibb.co/pBg0KhWk/fishtacos.png"
     },
     {
       name: "Guacamole Mexicano",
-      description: "Made to order with ripe avocados, tomatoes, onions, cilantro, and lime",
-      price: "$15.99",
+      description: "Avocado, tomato, onion, jalapeño, cilantro, lime",
+      price: "$13",
       image: "https://i.postimg.cc/769FKTZN/unnamed-(1).png"
     },
     {
       name: "Mole Poblano",
-      description: "Deep-fried burrito filled with your choice of meat, not actual dish thats in the picture.",
-      price: "$14.99",
-      image: "https://i.postimg.cc/VLMXCyLv/unnamed-(2)-(1).png"
+      description: "Shredded chicken, mole sauce, sesame seeds, rice, beans, tortillas",
+      price: "$14",
+      image: "https://i.ibb.co/Cpn3hhQm/Screenshot-2026-03-28-192923-removebg-preview.png"
     }
   ];
 
