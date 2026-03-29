@@ -74,7 +74,7 @@ export function MenuSection() {
           <span className="text-lg font-bold text-[#ea1758] whitespace-nowrap">
             {mainPrice.trim()}
           </span>
-          <span className="text-sm text-gray-500 whitespace-nowrap">
+          <span className="text-sm text-black-500 whitespace-nowrap">
             (1/2{halfPrice}
           </span>
         </div>

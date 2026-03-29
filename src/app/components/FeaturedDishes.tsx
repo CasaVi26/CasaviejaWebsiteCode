@@ -1,7 +1,3 @@
-/* <a href="https://imgbb.com/"><img src="https://i.ibb.co/ch2h7Tth/casasalad-removebg-preview.png" alt="casasalad removebg preview" border="0"></a>
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/VpNvks8J/guemec-removebg-preview.png" alt="guemec removebg preview" border="0"></a>
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/H58hPVM/viejaques-removebg-preview.png" alt="viejaques removebg preview" border="0"></a>*/
-
 export function FeaturedDishes() {
   const dishes = [
     {
