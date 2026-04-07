@@ -1,8 +1,7 @@
+Made by Emir G.
 
-  ## Running the code
+Check the linked guide for details on how to manage the website!
 
-  Run `npm i` to install the dependencies.
+But basically, find the page you want to change under src/app/pages, find the text you wish to change, click edit the document on top right, and change it.
 
-  Run `npm run dev` to start the development server.
-
-  Made for Casa Vieja.
+If you want anything changed that's more complicated than that, contact me.
