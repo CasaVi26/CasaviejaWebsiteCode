@@ -13,7 +13,7 @@ export function FeaturedDishes() {
       image: "https://i.ibb.co/rKqL6ZtD/texasfajitas-removebg-preview.png"
     },
     {
-      name: "Vieja Quesadila",
+      name: "Vieja Quesadilla",
       description: "Grilled chicken, sauteed onions, bell peppers, spinach, salsa verde, cheese, pico de gallo, guacamole, sour cream",
       price: "$15",
       image: "https://i.ibb.co/H58hPVM/viejaques-removebg-preview.png"
@@ -21,7 +21,7 @@ export function FeaturedDishes() {
     {
       name: "Fish Tacos",
       description: "Three fried tilapia tacos, pico de gallo, red cabbage, chipotle salsa",
-      price: "$8.99",
+      price: "$13",
       image: "https://i.ibb.co/pBg0KhWk/fishtacos.png"
     },
     {
