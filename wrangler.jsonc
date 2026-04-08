@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "casa-vieja-website",
+  "name": "casaviejawebsitecode",
   "compatibility_date": "2026-04-08",
   "observability": {
     "enabled": true
