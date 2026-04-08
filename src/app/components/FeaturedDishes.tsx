@@ -14,7 +14,7 @@ export function FeaturedDishes() {
     },
     {
       name: "Vieja Quesadila",
-      description: "Grilled chicken,sauteed onions, bell peppers, spinach, salsa verde, cheese, pico de gallo, guacamole, sour cream",
+      description: "Grilled chicken, sauteed onions, bell peppers, spinach, salsa verde, cheese, pico de gallo, guacamole, sour cream",
       price: "$15",
       image: "https://i.ibb.co/H58hPVM/viejaques-removebg-preview.png"
     },
