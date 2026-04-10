@@ -61,7 +61,7 @@ export function About() {
               <img 
                 src="https://i.ibb.co/Q3Z4rzfQ/4.jpg"
                 alt="Casa Vieja Restaurant Interior"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-left sm:object-center"
               />
             </div>
             <div className="absolute -bottom-6 -left-6 w-64 h-64 bg-[#ea1758]/20 rounded-2xl -z-10"></div>
