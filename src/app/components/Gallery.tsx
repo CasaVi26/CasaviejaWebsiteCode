@@ -35,7 +35,7 @@ export function Gallery() {
             Highlights
           </h2>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
-            A preview of the events, interior, and the atmosphere waiting for you.
+            A preview of the events, the interior, and the atmosphere awaiting for you.
           </p>
         </div>
 
