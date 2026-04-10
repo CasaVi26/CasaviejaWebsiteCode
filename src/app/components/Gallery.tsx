@@ -1,24 +1,24 @@
 export function Gallery() {
   const images = [
     {
-      url: "https://i.ibb.co/gMBNpJkY/fulltable.jpg",
-      alt: "A table of our staple dishes"
+      url: "https://i.ibb.co/SwZyS3Np/3.jpg",
+      alt: "Monday Night Special"
+    },
+    {
+      url: "https://i.ibb.co/840fz3hh/2.jpg",
+      alt: "Tuesday Night Special"
+    },
+    {
+      url: "https://i.ibb.co/8LNspXZT/4.jpg",
+      alt: "Wednesday Night Special"
+    },
+    {
+      url: "https://i.ibb.co/Cs0yYDHj/1.jpg",
+      alt: "Cinco De Mayo"
     },
     {
       url: "https://i.ibb.co/20tJG1VN/chips.jpg",
       alt: "Chips"
-    },
-    {
-      url: "https://i.ibb.co/NgCbnWhD/guacamolyburrito.jpg",
-      alt: "Guacamole Burrito"
-    },
-    {
-      url: "https://i.ibb.co/rCH5bNf/menu.jpg",
-      alt: "Our physical menu, digital one is above!"
-    },
-    {
-      url: "https://i.ibb.co/BVqG5y0x/enterance.jpg",
-      alt: "Entrance"
     },
     {
       url: "https://i.ibb.co/qLQ0NqQm/interior.jpg",
