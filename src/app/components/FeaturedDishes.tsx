@@ -2,7 +2,7 @@ export function FeaturedDishes() {
   const dishes = [
     {
       name: "Casa Salad",
-      description: "Grilled chicken, greens, spinach, avocado, tomato. Steak or grilled chicken -> $14, shrimp $17. **Add avocado $2, add queso fresco $1.",
+      description: "Grilled chicken, lettuce, spinach, red cabbage, avocado, tomato",
       price: "$15",
       image: "https://i.ibb.co/ch2h7Tth/casasalad-removebg-preview.png"
     },
