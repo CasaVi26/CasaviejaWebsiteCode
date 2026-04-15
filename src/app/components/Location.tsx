@@ -102,7 +102,7 @@ export function Location() {
           {/* Map Placeholder */}
           <div className="relative h-[400px] lg:h-full min-h-[400px] rounded-2xl overflow-hidden shadow-xl">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.8!2d-84.5937!3d33.3965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDIzJzQ3LjQiTiA4NMKwMzUnMzcuMyJX!5e0!3m2!1sen!2sus!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d833.2659494909863!2d-84.53591773371566!3d33.3432830276184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4eb7b106fbde7%3A0x88135b0990f9da3!2sCasa%20Vieja!5e0!3m2!1sen!2sus!4v1776217267305!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{ border: 0 }}
