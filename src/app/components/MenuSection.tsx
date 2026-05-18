@@ -27,6 +27,7 @@ export function MenuSection() {
     almuerzo: { isExpanded: true, initialVisibleItems: 6 },
     kids: { isExpanded: true, initialVisibleItems: 6},
     drinks: { isExpanded: true, initialVisibleItems: 3 },
+    catering: { isExpanded: true, initialVisibleItems: 2 },
   });
 
 
@@ -640,7 +641,21 @@ const menuData = {
     { name: "Soft Drinks", description: "Coke, diet coke, coke zero, sprite, lemonade, fanta, Mr. Pibb, tea, coffee", price: "$3.25" },
     { name: "Cerveza Mexicana", description: "Corona Extra, Corona Light, Tecate, Modelo Especial, Negra Modelo, Dos Equis Lager, Dos Equis Anber, Pacifico, Sol, Victoria", price: "$5.50" },
     { name: "Cerveza Domestica", description: "Budweister, Bud Light, Bud Light Lime, Coors Light, Miller Light, Michelob Ultra", price: "$5.00" }
-  ]
+  ],
+  catering: [
+    {
+      category: 'catering',
+      name: "Fajita Bar",
+      description: "Choice of steak or chicken fajitas (must choose 1/2 steak 1/2 chicken), rice, refried beans, lettuce, pico de gallo, guacamole, tortillas (3 per person), chips and salsa.",
+      price: "$19 per person"
+    },
+    {
+      category: 'catering',
+      name: "Taco Bar",
+      description: "2 tacos per person with choice of ground beef, shredded chicken, or broth on soft or hard shells, rice, refried beans, lettuce, shredded cheese, tomatoes, chips and salsa.",
+      price: "$11.50 per person"
+    }
+  ],
 };
 
   const categories = [
@@ -652,6 +667,7 @@ const menuData = {
     { id: 'delmar', label: 'Del Mar (Seafood)' },
     { id: 'delacasa', label: 'De La Casa (House Specialties)' },
     { id: 'almuerzo', label: 'Almuerzo (Lunch)' },
+    { id: 'catering', label: 'Catering Menu' },
     { id: 'kids', label: 'Kids Menu' },
     { id: 'drinks', label: 'Beverages' }
   ];
@@ -968,6 +984,43 @@ const menuData = {
       );
     }
     
+    if (categoryId === 'catering') {
+      const itemsToShow = items;
+      return (
+        <>
+          <div className="mb-6 p-4 bg-[#f6eefc] border-l-4 border-[#6d1c57] rounded">
+            <p className="text-[#6d1c57] font-medium italic">
+              Served on large aluminum pans - buffet style
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {itemsToShow.map((item, index) => (
+              <div
+                key={index}
+                className={`bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all duration-300 ${
+                  item.name === 'Fajita Bar' ? 'border-l-4 border-amber-500' : 'border-l-4 border-emerald-500'
+                }`}
+              >
+                <div className="flex items-start justify-between mb-2">
+                  <h3 className={`text-2xl font-extrabold ${item.name === 'Fajita Bar' ? 'text-amber-700' : 'text-emerald-700'}`}>
+                    {item.name}
+                  </h3>
+                  <div className="ml-4">
+                    <span className={`${item.name === 'Fajita Bar' ? 'text-amber-600' : 'text-emerald-600'} text-xl font-bold`}>
+                      {item.price}
+                    </span>
+                  </div>
+                </div>
+                <div className="border-b border-gray-200 my-2"></div>
+                <p className="text-foreground/70 text-m leading-relaxed mb-4">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </>
+      );
+    }
+    
     if (categoryId === 'kids') {
       const itemsToShow = categoryState.isExpanded 
         ? items 
@@ -1109,7 +1162,12 @@ const menuData = {
                 value={category.id}
                 className="data-[state=active]:bg-[#6d1c57] data-[state=active]:text-white px-4 py-2 rounded-lg transition-all"
               >
-                {category.label}
+                <div className="flex items-center gap-2">
+                  <span>{category.label}</span>
+                  {category.id === 'catering' && (
+                    <span aria-hidden="true" className="ml-2 inline-block bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">NEW!</span>
+                  )}
+                </div>
               </TabsTrigger>
             ))}
           </TabsList>
