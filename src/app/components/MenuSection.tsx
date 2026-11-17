@@ -84,6 +84,8 @@ export function MenuSection() {
     return <span className="text-lg font-bold text-[#ea1758] whitespace-nowrap">{price}</span>;
   };
 
+
+  
 const menuData = {
   appetizers: [
     { 
@@ -232,13 +234,13 @@ const menuData = {
     { 
       category: 'vegetarian',
       name: "17. Plato Vegetariano", 
-      description: "Cheese chile relleno, enchilada, chalupa, rice, beans", 
+      description: "Cheese chile relleno, cheese enchilada, chalupa, rice, beans", 
       price: "$14" 
     },
     { 
       category: 'vegetarian',
       name: "18. Enchiladas Rancheras", 
-      description: "Three cheese/onion enchiladas, salad", 
+      description: "Three cheese/onion enchiladas, lettuce, tomato, sour cream", 
       price: "$13" 
     },
     { 
@@ -250,19 +252,19 @@ const menuData = {
     { 
       category: 'vegetarian',
       name: "20. Chalupas Mexicanas", 
-      description: "Two chalupas, beans, lettuce, tomato, guacamole", 
+      description: "Two toasted corn tortillas, beans, lettuce, tomato, cheese, guacamole", 
       price: "$9" 
     },
     { 
       category: 'vegetarian',
       name: "Fajitas Vegetarianas", 
-      description: "sauted onions, bell peppers, tomato, cauliflower, mushrooms, carrots, broccoli, rice, beans, guacamole salad, tortillas", 
+      description: "sauteed onions, bell peppers, tomato, cauliflower, mushrooms, carrots, broccoli, rice, beans, guacamole salad, tortillas", 
       price: "$16" 
     },
     { 
       category: 'vegetarian',
       name: "QV. Quesadillas Vegetarianas", 
-      description: "sauteed onions, bell peppers, mushrooms, tomato, melted cheese, pico de galo, side salad", 
+      description: "sauteed onions, bell peppers, mushrooms, tomato, melted cheese, pico de gallo, side salad", 
       price: "$14" 
     },
     { 
@@ -281,7 +283,7 @@ const menuData = {
     { 
       category: 'granja',
       name: "21. Enchiladas De Pollo", 
-      description: "Three chicken enchiladas, cheese, salad", 
+      description: "three shredded chicken enchiladas, cheese, lettuce, tomato, sour cream", 
       price: "$13" 
     },
     { 
@@ -306,15 +308,15 @@ const menuData = {
   platosMexicanos: [
     { name: "25. Enchiladas Supreme", description: "one chicken, one cheese, one beef, and one bean enchilada, salsa, lettuce, tomato, cheese, sour cream", price: "$15" },
     { name: "26. Chiles Rellenos", description: "Two stuffed beef and cheese mexican chiles, guacamole salad", price: "$14" },
-    { name: "27. Burrito Supreme", description: "Ground beef, beans, melted cheese, lettuce,tomato, sour cream, guacamole", price: "$13" },
+    { name: "27. Burrito Supreme", description: "Ground beef, beans, melted cheese, lettuce, tomato, sour cream, guacamole", price: "$13" },
     { name: "28. Enchilada Dinner", description: "Two enchiladas (your choice), rice, beans", price: "$13" },
     { name: "29. Casa Special", description: "Grilled chicken, rice, melted cheese", price: "$14" },
     { name: "30. Burrito Don Nacho", description: "Steak, grilled chicken, shrimp, chorizo, melted cheese", price: "$20" },
     { name: "31. Sandwich De Fajita", description: "Steak, sauteed onions, bell peppers, mushrooms, cheese, hoagie roll, french fries", price: "$15" },
     { name: "32. Tacos Al Pastor (4)", description: "Marinated pork, pineapple, onions, cilantro, salsa verde, lime", price: "$17" },
     { name: "33. Plato Fiesta", description: "Chile relleno, beef enchilada, beef burrito, beef taco, chicken flauta, and beef tostada", price: "$18" },
-    { name: "34. Fajita Quesadillas", description: "Two quesadillas (steak or chicken),sauteed bell peppers, onions, melted chese, side salad", price: "$20" },
-    { name: "35. Carnitas", description: "Deep fried beer marinated port chunks, rice, beans, pico de gallo, salsa verde, tortillas", price: "$15" },
+    { name: "34. Fajita Quesadillas", description: "Two quesadillas (steak or chicken),sauteed bell peppers, onions, melted cheese, side salad", price: "$20" },
+    { name: "35. Carnitas", description: "Deep fried beer marinated port, rice, beans, pico de gallo, salsa verde, tortillas", price: "$15" },
     { name: "36. Tacos", description: "Three crunchy ground beef tacos, lettuce, cheese", price: "$10" },
     { name: "37. Burrito Blanco", description: "Steak, sauteed mushrooms, onions, cheese", price: "$16" },
     { name: "38. Chimichanga Dinner", description: "(Beef or chicken), fried tortilla, melted cheese, lettuce, tomato, sour cream, rice, beans", price: "$14" },
@@ -639,8 +641,8 @@ const menuData = {
   ],
   drinks: [
     { name: "Soft Drinks", description: "Coke, diet coke, coke zero, sprite, lemonade, fanta, Mr. Pibb, tea, coffee", price: "$3.25" },
-    { name: "Cerveza Mexicana", description: "Corona Extra, Corona Light, Tecate, Modelo Especial, Negra Modelo, Dos Equis Lager, Dos Equis Anber, Pacifico, Sol, Victoria", price: "$5.50" },
-    { name: "Cerveza Domestica", description: "Budweister, Bud Light, Bud Light Lime, Coors Light, Miller Light, Michelob Ultra", price: "$5.00" }
+    { name: "Cerveza Mexicana", description: "Corona Extra, Corona Light, Tecate, Modelo Especial, Negra Modelo, Dos Equis Lager, Amber, Pacifico, Sol, Victoria", price: "$5.50" },
+    { name: "Cerveza Domestica", description: "Budweiser, Bud Light, Bud Light Lime, Coors Light, Miller Light, Michelob Ultra", price: "$5.00" }
   ],
   catering: [
     {
