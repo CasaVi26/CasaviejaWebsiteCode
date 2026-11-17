@@ -95,55 +95,55 @@ const menuData = {
       category: 'appetizers',
       name: "Appetizer's Plate", 
       description: "Quesadillas, taquitos, nachos al carbon, sour cream, guacamole salad", 
-      price: "$16" 
+      price: "$17" 
     },
     { 
       category: 'appetizers',
       name: "Nachos", 
       description: "Shredded chicken or ground beef, cheese, jalapeños", 
-      price: "$12 (1/2 $10)" 
+      price: "$13 (1/2 $10)" 
     },
     { 
       category: 'appetizers',
       name: "Macho Nachos", 
       description: "Shredded chicken or ground beef, cheese, beans, lettuce, tomato, guacamole, sour cream", 
-      price: "$14 (1/2 $12)" 
+      price: "$15 (1/2 $12)" 
     },
     { 
       category: 'appetizers',
       name: "Nachos Al Carbon", 
       description: "Grilled steak, beans, cheese", 
-      price: "$16 (1/2 $13)" 
+      price: "$17 (1/2 $13)" 
     },
     { 
       category: 'appetizers',
       name: "Taquitos", 
       description: "Chicken or steak, lettuce, tomatoes, guacamole, sour cream", 
-      price: "$14" 
+      price: "$15" 
     },
     { 
       category: 'appetizers',
       name: "Grande Quesadilla", 
       description: "Shredded chicken or ground beef, peppers, onions, lettuce, tomato, sour cream, guacamole (steak or grilled chicken -> $18)", 
-      price: "$14" 
+      price: "$15" 
     },
     { 
       category: 'appetizers',
       name: "Fajita Nachos", 
       description: "Grilled chicken or steak, onions, bell peppers, tomato, beans, cheese", 
-      price: "$18 (1/2 $13)" 
+      price: "$19 (1/2 $13)" 
     },
     { 
       category: 'appetizers',
       name: "Texas Dip", 
       description: "Grilled shrimp, steak, grilled chicken, beans, cheese", 
-      price: "$16" 
+      price: "$17" 
     },
     { 
       category: 'appetizers',
       name: "Texas Fajita Nachos", 
       description: "Steak, chicken, shrimp, onions, peppers, tomato, beans, cheese", 
-      price: "$20 (1/2 $15)" 
+      price: "$21 (1/2 $16)" 
     },
     { 
       category: 'appetizers',
@@ -174,7 +174,7 @@ const menuData = {
       category: 'dips',
       name: "Beef Dip", 
       description: "", 
-      price: "$9" 
+      price: "$10" 
     },
     { 
       category: 'dips',
@@ -192,14 +192,14 @@ const menuData = {
     { 
       category: 'salads',
       name: "Casa Salad", 
-      description: "Grilled chicken, greens, spinach, avocado, tomato. Steak or grilled chicken -> $14, shrimp $17. **Add avocado $2, add queso fresco $1.", 
-      price: "$15" 
+      description: "Grilled chicken, greens, spinach, avocado, tomato. Shrimp -> $18. **Add avocado $2, add queso fresco $1.", 
+      price: "$16" 
     },
     { 
       category: 'salads',
       name: "Taco Salad", 
-      description: "Beef or chicken, lettuce, tomato, cheese, sour cream, guacamole. Steak or grilled chicken -> $14, shrimp $17. **Add avocado $2, add queso fresco $1.", 
-      price: "$13" 
+      description: "Beef or chicken, lettuce, tomato, cheese, sour cream, guacamole. Steak or grilled chicken -> $15, shrimp $18. **Add avocado $2, add queso fresco $1.", 
+      price: "$14" 
     },
     // Soups Section
     { 
